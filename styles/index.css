@@ -1,0 +1,161 @@
+
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 12px solid #5c7743;
+    border-radius: 50px;
+    padding: 20px 0;
+}
+
+.img-1 {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.img-2 {
+    display: block;
+    width: 104%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    right: 2%;
+}
+
+.text-1 {
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #2f1400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.img-3 {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-4 {
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-5 {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-6 {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-7 {
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#wrapper {
+    display: flex;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#curbside {
+    flex: 0 0 50%;
+    margin-right: 25px;
+}
+
+#in-store {
+    flex: 1;
+}
+
+ul {
+    padding-inline-start: 18px;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.bottom-notes {
+    list-style-type: '-';
+}
+
+/*  Button Dropdown Formatting  */
+
+.faq {
+    background-color: #e3e3e3;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-text {
+    position: inherit;
+    left: 50px;
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+.accordion {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    color: #15223a;
+    cursor: pointer;
+    padding: 18px;
+    border: 1px solid white;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    transition: 0.2s;
+    outline: none;
+    font-family: "montserratregular",Helvetica,Arial,sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.panel {
+    padding: 0 18px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.25s ease-out;
+    background-color: #ffffff;
+    font-family: "montserratregular",Helvetica,Arial,sans-serif;
+    border-left: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    color: #282728;
+
+}
+
+/*  End Button Dropdown Formatting  */
