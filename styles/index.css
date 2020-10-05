@@ -209,10 +209,6 @@ li {
         width: 80%;
     }
 
-    #in-store {
-        margin-top: 35px;
-    }
-
     ul {
         padding-inline-start: 30px;
     }
@@ -255,6 +251,10 @@ li {
 @media only screen and (max-width: 750px) {
     #wrapper {
         display: block;
+    }
+
+    #in-store {
+        margin-top: 35px;
     }
 
     .faq {

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C-A-L Pickup</title>
+    <style>
+       
+
+
+img {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#container {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 12px solid #5c7743;
+    border-radius: 50px;
+    padding: 20px 0;
+}
+
+h1, p, ul, li {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}                                    
+
+.img-1 {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.img-2 {
+    display: block;
+    width: 106%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    right: 1.5%;
+    margin-top: 25px;
+}
+
+.text-1 {
+    display: block;
+    width: 90%;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #2f1400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.img-3 {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-4 {
+    display: block;
+    width: 60%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-5 {
+    display: block;
+    width: 50%;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-6 {
+    display: block;
+    width: 60%;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-7 {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 70px;
+}
+
+#wrapper {
+    display: flex;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#curbside {
+    flex: 0 0 50%;
+    margin-right: 25px;
+}
+
+#in-store {
+    flex: 1;
+}
+
+ul {
+    padding-inline-start: 18px;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.bottom-notes {
+    margin: 75px auto;
+    width: 85%;
+}
+
+.bottom-notes-list {
+    list-style-type: '-';
+}
+
+.bottom-notes p {
+    line-height: 1.5em;
+}
+
+/*  Button Dropdown Formatting  */
+
+.faq {
+    background-color: #e3e3e3;
+    width: 90%;
+    display: block;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-text {
+    position: inherit;
+    left: 50px;
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+.accordion {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    color: #15223a;
+    cursor: pointer;
+    padding: 18px;
+    border: 1px solid white;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    transition: 0.2s;
+    outline: none;
+    font-family: "montserratregular",Helvetica,Arial,sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.panel {
+    padding: 0 18px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.25s ease-out;
+    background-color: #ffffff;
+    font-family: "montserratregular",Helvetica,Arial,sans-serif;
+    border-left: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    color: #282728;
+
+}
+
+/*  End Button Dropdown Formatting  */
+
+
+
+
+
+
+@media only screen and (max-width: 1300px) {
+    h1 {
+        font-size: 2.25vw;
+    }
+
+    #wrapper {
+        width: 80%;
+    }
+
+    ul {
+        padding-inline-start: 30px;
+    }
+
+    .img-7 {
+        top: 60px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+.img-1 {
+       width: 90%;
+}    
+
+.img-6 {
+        width: 70%;
+    }
+
+    .img-7 {
+        top: 52px;
+    }
+}
+
+
+
+@media only screen and (max-width: 860px) {
+    h1 {
+        font-size: 3vw;
+    }
+
+    .img-4 {
+        width: 80%;
+    }
+
+    .img-5 {
+        width: 70%;
+    }
+}
+
+
+
+@media only screen and (max-width: 750px) {
+    #wrapper {
+        display: block;
+    }
+
+    .faq {
+        margin-top: 15px;
+    }
+
+    .img-5 {
+        margin-top: 40px;
+    }
+
+    .img-6 {
+        width: 80%;
+    }
+
+    .img-7 {
+        width: 75%;
+        top: 48px;
+    }
+
+    #in-store {
+        margin-top: 35px;
+    }
+}
+
+
+
+@media only screen and (max-width: 530px) {
+    .img-4 {
+        width: 80%;
+    }
+
+    .img-5 {
+        width: 90%;
+    }
+
+    .img-6 {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 4.25vw;
+    }
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    .img-4 {
+        width: 90%;
+    }
+
+    .img-7 {
+        top: 43px;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <div id="container">
+
+        <div class="img-1">
+            <img class="img-1" src="{{media url=wysiwyg/cal-pickup/img-1.png}}" alt="C-A-L Pickup">
+        </div>
+
+        <div class="img-2">
+            <img class="img-2" src="{{media url=wysiwyg/cal-pickup/img-2.png}}" alt="">
+        </div>
+
+        <div class="text-1">
+            <h1><span class="nowrap">C-A-L</span> Pickup is FREE and available <span class="nowrap">7 days</span> a week!</h1>
+            <p><span class="nowrap">C-A-L</span> Pickup notifications will arrive via email.  Most orders will be ready within 24-hours, however, please allow for extra processing time on nights, weekends, and holidays.  <span class="nowrap">Some Restrictions apply.</span></p>
+        </div>
+
+        <div class="img-3">
+            <img class="img-3" src="{{media url=wysiwyg/cal-pickup/img-3.png}}" alt="">
+        </div>
+
+        <div>
+            <img class="img-4" src="{{media url=wysiwyg/cal-pickup/img-4.png}}" alt="">
+        </div>
+
+        <div id="wrapper">
+
+            <div id="curbside">
+                <h3>Curbside:</h3>
+                <ul>
+                    <li>
+                        Park in one of the designated <span class="nowrap">C-A-L</span> Pickup parking spaces and call the number listed on the sign.
+                    </li>
+                    <li>
+                        Have your ID and order number handy.
+                    </li>
+                    <li>
+                        A Team Member will request access to your trunk, back seat, or direct you to a loading area (for large/oversized items) then they'll load your order.
+                    </li>
+                </ul>
+            </div>
+
+            <div id="in-store">
+                <h3>In-Store:</h3>
+                <ul>
+                    <li>
+                        Once you're in the store, locate the <span class="nowrap">C-A-L</span> Pickup in-store area for assistance from one of our Team Members.
+                    </li>
+                    <li>
+                        Have you ID and order number handy.
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div>
+            <img class="img-5" src="{{media url=wysiwyg/cal-pickup/img-5.png}}" alt="">
+        </div>
+
+        <div class="faq">
+            <button class="accordion"><span class="button-text">WHEN WILL MY <span class="nowrap">C-A-L</span> PICKUP ORDER BE READY?</span></button>
+            <div class="panel">
+                <p>Most orders will be ready within 24-hours however if your order was placed after store hours, on a weekend, or a holiday it may take longer. <span class="nowrap">C-A-L</span> Pickup is available 7 days a week, during the same hours as your local store hours.<br><br>Keep an eye on your email.  You will receive a "Ready for Pickup" email when your order is ready.</p>
+            </div>
+    
+
+            <button class="accordion"><span class="button-text">HOW LONG DO I HAVE TO PICK-UP MY <span class="nowrap">C-A-L</span> PICKUP ORDER?</span></button>
+            <div class="panel">
+                <p>We'll keep your order ready-to-go in store for a total of five (5) days.  </p>
+            </div>
+
+
+            <button class="accordion"><span class="button-text">WHERE DO I GO AND WHAT DO I BRING WITH ME?</span></button>
+            <div class="panel">
+                <p>We have two options for <span class="nowrap">C-A-L</span> Pickup, in-store and curbside!  You'll receive an email confirming that your order is ready to be picked up.  Please wait for this email to arrive before you head to the store</p>
+            </div>
+
+
+            <button class="accordion"><span class="button-text">CAN SOMEONE ELSE PICK-UP MY <span class="nowrap">C-A-L</span> PICKUP ORDER FOR ME?</span></button>
+            <div class="panel">
+                <p>Yes, you can assign an alternate person to pickup your order during the checkout process.  Simply provide their first and last name and email.  They'll receive all email communication about your C-A-L Pickup order until it is picked up.  They will need to bring their email notification or order number along with their driver's license/government-issued photo ID to the store.<br><br>NOTE: If your order includes any age restricted items, ID must be presented to provide proof of age for your state.</p>
+            </div>
+
+
+            <button class="accordion"><span class="button-text">WHAT IF I NEED TO CANCEL MY <span class="nowrap">C-A-L</span> PICKUP ORDER?</span></button>
+            <div class="panel">
+                <p>Email online@CALRanch.com or call 1-855-881-5540 Monday-Friday 8am-5pm MST.</p>
+            </div>
+
+
+            <button class="accordion"><span class="button-text">HOW DO I RETURN MY PURCHASE?</span></button>
+            <div class="panel">
+                <p>If you would like to return any items from your order, just bring the items and your receipt email to any store location.<br><br>Check our return policy for guidelines and restrictions.</p>
+            </div>
+
+
+            <button class="accordion"><span class="button-text">WHEN WILL I BE CHARGED FOR MY <span class="nowrap">C-A-L</span> PICKUP ORDER?</span></button>
+            <div class="panel">
+                <p>When you arrive to pick up your order we will charge your card and complete the transaction.  We'll keep your order ready-to-go in store for a total of five (5) days.  At the close of business on the fifth day, we will cancel the order and you will not be charged.</p>
+            </div>
+
+
+            <button class="accordion"><span class="button-text">WHAT IF I PAID WITH A GIFT CARD AND ITEMS WERE UNAVALIBLE?</span></button>
+            <div class="panel">
+                <p>If your order was paid for with a <span class="nowrap">C-A-L</span> Ranch Virtual Gift Card and there were unavailable items or the order is canceled, a new virtual gift card will be sent to the email address on the order.</p>
+            </div>
+        </div>
+
+
+        <div>
+            <img class="img-6" src="{{media url=wysiwyg/cal-pickup/img-6.png}}" alt="">
+        </div>
+
+        <div>
+            <img class="img-7" src="{{media url=wysiwyg/cal-pickup/img-7.png}}" alt="">
+        </div>
+
+    </div>    
+
+        <div class="bottom-notes">
+            <p>
+                Shop your local store on CALRanch.com for eligible <span class="nowrap">C-A-L</span> Pickup items.<br>
+                Before you add any products to your cart, click the button that says "Free Pickup In-store" and make sure your local <span class="nowrap">C-A-L</span> Ranch Store is shown in the red text below.<br>
+                Once the order is placed, you will receive an Order Confirmation email.<br>
+                When your order is ready, you will receive a Ready for Pickup email indicating your items are ready and available for pick up.<br>
+                To confirm store hours and directions to your local <span class="nowrap">C-A-L</span> Ranch Store, please <a href="https://www.calranch.com/storelocator/" target="_blank"><span class="link">CLICK HERE.</span></a><br>
+                When you pick up your order, have your email notification or order number along with your driver's license/government-issued photo ID.<br>
+            </p>
+                <ul class="bottom-notes-list">
+                    <li>
+                        If your order includes any age restricted items, ID must be presented to provide proof of age for your state.
+                    </li>
+                    <li>
+                        For your safety, <span class="nowrap">C-A-L</span> Ranch Stores are happy to load your items - however, you are responsible for securing your load.
+                    </li>
+                    <li>
+                        If you placed more than one order, please note that they may be ready at different times.
+                    </li>
+                    <li>
+                        We'll hold your order in store for five (5) days.  If it's not picked up, it will be canceled.
+                    </li>
+                </ul><br>
+            <p>
+                PLEASE NOTE:  Occasionally, due to extreme weather conditions, current events, and/or holiday rush there may be delays in <span class="nowrap">C-A-L</span> Pickup Order fulfillment.
+            </p>
+        </div>
+
+
+
+    
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        var icon = document.getElementsByClassName("star-icon");
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+
+                }
+            });
+
+        }
+    </script>
+</body>
+</html>
